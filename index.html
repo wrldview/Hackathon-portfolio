@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <h1 class="logo">Stephen<span>.</span></h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p>Hi, Welcome</p>
+            <h2>I'm <span class="highlight">Stephen</span></h2>
+            <h2>A full-stack web developer</h2>
+            <h2>From Nairobi, Kenya</h2>
+        </div>
+        <div class="hero-image">
+            <img src="pic/science.jpg" alt="John Doe">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>Iam a passionate web developer<br> with a focus on front-end and back -end technologies. <br>I specialize in building responsive websites that are both functional and visually appealing. <br>I am always learning new technologies to improve my skills and make sure i give the best work to my customers.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Services</h2>
+        <div class="service-item">
+            <h3>Web Design</h3>
+            <p>Crafting unique and engaging designs for websites and apps.</p>
+        </div>
+        <div class="service-item">
+            <h3>Development</h3>
+            <p>Building fast, scalable, and responsive web applications.</p>
+        </div>
+        <div class="service-item">
+            <h3>Consulting</h3>
+            <p>Providing expert advice on web development strategies and best practices.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/300" alt="Project 1">
+            <h3>Project One</h3>
+            <p>A personal blog created using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/300" alt="Project 2">
+            <h3>Project Two</h3>
+            <p>An e-commerce site built with HTML, CSS, and JavaScript.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <p>
+            LinkedIn: 
+            <a href="https://www.linkedin.com/in/stephen-opiyo-865984354" target="_blank">Visit my LinkedIn</a>
+        </p>
+        <p>Email: stephenfopiyo@gmail.com</p>
+        <p>Phone: 0722429961</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Stephen Opiyo</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

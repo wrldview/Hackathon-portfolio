@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #111, #333); /* Subtle gradient for body */
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: black;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: #ff0000; /* Red highlight */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+ul li a:hover {
+    color: #ff4d4d; /* Light red color change on hover */
+    transform: translateY(-2px); /* Small lift effect on hover */
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 50px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.highlight {
+    color: #ff0000; /* Red for highlighting */
+}
+
+.hero-image img {
+    width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Hover effect on image */
+}
+
+.hero-image img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about p, .services p, .contact p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #ff4d4d, #ff0000); /* Red gradient for services section */
+}
+
+.service-item {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px); /* Moves up slightly on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+    background-color: #333; /* Lighter background color on hover */
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #ff4d4d, #ff0000); /* Red gradient for portfolio section */
+}
+
+.portfolio-item {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px); /* Moves up slightly on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+    background-color: #333; /* Lighter background color on hover */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+a {
+    color: #0077B5; /* Change to your desired color */
+}
+
+
+
+
+
+
+
+
+
