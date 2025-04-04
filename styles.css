@@ -57,6 +57,7 @@ ul li a:hover {
     align-items: center;
     justify-content: space-between;
     padding: 100px 50px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 .hero-text {
@@ -108,6 +109,7 @@ section h2 {
     gap: 20px;
     padding: 40px 20px;
     background: linear-gradient(to right, #ff4d4d, #ff0000); /* Red gradient for services section */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
 .service-item {
@@ -136,6 +138,7 @@ section h2 {
     gap: 20px;
     padding: 40px 20px;
     background: linear-gradient(to right, #ff4d4d, #ff0000); /* Red gradient for portfolio section */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
 .portfolio-item {
@@ -174,6 +177,117 @@ footer {
 
 a {
     color: #0077B5; /* Change to your desired color */
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        padding: 60px 30px;
+    }
+
+    .hero-text h2 {
+        font-size: 36px;
+    }
+
+    .hero-image img {
+        width: 80%;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .service-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .portfolio {
+        flex-direction: column;
+    }
+
+    .portfolio-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .hero-text h2 {
+        font-size: 28px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    .service-item, .portfolio-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    ul li a {
+        font-size: 14px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero-text h2 {
+        font-size: 24px;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+
+    .service-item, .portfolio-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
 }
 
 
